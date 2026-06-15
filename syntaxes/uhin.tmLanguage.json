@@ -1,0 +1,10 @@
+{ "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "uhin", "scopeName": "source.uhin",
+  "patterns": [
+    { "name": "comment.line.double-slash.uhin", "match": "//.*$" },
+    { "name": "string.quoted.double.uhin", "begin": "\"", "end": "\"" },
+    { "comment": "PLACEHOLDER: keywords are generated per-language from the ILM keyword registries (construct,native_keyword,romenagri). A build step should emit this list from /registry. For now, Latin/canonical keywords:",
+      "name": "keyword.control.uhin",
+      "match": "\\b(if|else|for|while|return|int|char|float|double|void|main|class|struct|switch|case|break|continue|import|function)\\b" }
+  ]
+}

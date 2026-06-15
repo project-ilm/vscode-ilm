@@ -1,0 +1,14 @@
+{
+  "name": "vscode-ilm",
+  "displayName": "ILM / Hindawi (.uhin)",
+  "description": "Syntax highlighting for ILM/Hindawi localized-keyword source (.uhin). Placeholder grammar.",
+  "version": "0.0.1",
+  "publisher": "project-ilm",
+  "license": "GPL-3.0-or-later",
+  "engines": { "vscode": "^1.70.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [{ "id": "uhin", "aliases": ["ILM", "Hindawi", "uhin"], "extensions": [".uhin"], "configuration": "./language-configuration.json" }],
+    "grammars": [{ "language": "uhin", "scopeName": "source.uhin", "path": "./syntaxes/uhin.tmLanguage.json" }]
+  }
+}
